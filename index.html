@@ -3,12 +3,15 @@
 <head>
 <title>Prateek Agarwal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/logo.png" type="image/x-icon"/>
+<link rel="stylesheet" href="js/jquery.lineProgressbar.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-         
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
 body
 {
@@ -30,16 +33,90 @@ body
 }
 .work_details
 {
-    width:400px;
+    /* width:450px; */
     height:200px;
     /* border:2px solid black; */
     background-color: #f9f9ff;
     border-radius:10px;
+    margin-top:50px;
+    padding:20px;
 }
+.work_details:hover
+{
+    background:#90acd1;
+    cursor:pointer;
+    color:#fff;
+  
+}
+.education 
+{
+
+    /* width:550px; */
+    height:200px;
+    /* border:2px solid black; */
+    background-color: #f9f9ff;
+    border-radius:10px;
+    margin-top:50px;
+    padding:20px;
+
+}
+.education:hover
+{
+    background:#90acd1;
+    cursor:pointer;
+    color:#fff;
+  
+}
+#loader 
+{
+    margin:auto auto;
+    width:200px;
+
+}
+.social_icon
+{
+    width:50px;
+    height:50px;
+    margin-left:30px;
+    display:inline-block;
+    text-align:center;
+} 
+.icon 
+{
+    color:#777777;
+}
+.icon:hover
+{
+    color:#e45447;
+}
+
 </style>
 </head>
 <body>
+<!-- <img src="img/logo.svg" id="loader"> -->
 <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-12">
+                    <div style="padding:20px;"><img src="img/itsme.JPG"style="width:150px;height:100px;"></div>
+                </div>
+                <div class="col-12">
+                    <div><h1 style="color:black;font-weight:bold;font-size:60px;padding:20px;margin-left:30px;">Prateek Agarwal</h1></div>
+                </div>
+                <div class="col-12">
+                    <div><div style="color:#777777;font-weight:bold;font-size:30px;padding:20px;margin-left:30px;">Software <span style="font-size:30px;color:#e45447;">Engineer</span> and Web <span style="font-size:30px;color:#90ACD1;">Developer</span></div></div>
+                </div>
+                <div class="col-12">
+                    <div style="text-align:left;padding:40px;"><button class="btn"><a href="" style="text-decoration:none;color:white;">Hire Me</a></button></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12" style="background-image:url('img/banner.jpg');height:500px;background-size: cover;background-repeat:no-repeat;background-position:right;"></div>   
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top:100px;">
     <div class="row">
         <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"></div>
         <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12">
@@ -53,14 +130,67 @@ body
                     <div style="margin-top:20px;padding:20px;text-align:justify;">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed. inappropriate behavior is often laughed off as “boys will be boys,” women face higher. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</div>
                 </div>
                 <div class="col-12">
-                    <div style="margin-left:18px;"><button class="btn">Resume</button></div>
+                    <div style="margin-left:18px;"><button class="btn"><a href="/img/creditmind.png" download style="text-decoration:none;color:white;">Resume</a></button></div>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12">
+            <div class="row">
+                <div class="col-12"><div style="font-size:30px;padding:40px;font-weight:bold;color:#222222;">Education</div></div>
+                <div class="col-12">
+                    <div style="margin-left:20px;margin-top:-20px;">
+                        <div style="width:10px;height:10px;background:#e45447;border-radius: 7px;position:absolute;margin-left:20px;"></div>
+                        <div style="width:100px;height:2px;background:#e45447;position:absolute;margin-left:30px;margin-top:3px;"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+     </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-xs-12">
+            <div class="education">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="font-size:18px;padding:15px;font-weight:bold;"><h4><i class="fas fa-school" style="font-size:25px;"></i><span style="margin-left:10px;"></span>Xth</h4></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>Tiny Tots College , Moradabad</h6></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>Science</h6></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>Percentage - 83%</h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-xs-12">
+            <div class="education">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="font-size:18px;padding:15px;font-weight:bold;"><h4><i class="fas fa-school" style="font-size:25px;"></i><span style="margin-left:10px;"></span>XIIth</h4></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>Tiny Tots College , Moradabad</h6></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>Science</h6></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>Percentage - 82%</h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-xs-12">
+            <div class="education">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="font-size:18px;padding:15px;font-weight:bold;"><h4><i class="lni lni-graduation" style="font-size:25px;"></i><span style="margin-left:10px;"></span>UnderGrauate</h4></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>Vellore Institute Of Technology,TamilNadu</h6></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>B.Tech In Information Technology</h6></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>CGPA - 8.80 </h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12">
@@ -72,27 +202,274 @@ body
                         <div style="width:100px;height:2px;background:#e45447;position:absolute;margin-left:30px;margin-top:3px;"></div>
                     </div>
                 </div>
-
+            </div>
+          </div>
+     </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-xs-12">
+            <div class="work_details">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="font-size:18px;padding:15px;font-weight:bold;"><h4>Front End Web Developer</h4></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>FindMind Analytics Pvt Ltd, Vellore,TamilNadu</h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="work_details">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="font-size:18px;padding:15px;font-weight:bold;"><h4>Front End Web Developer</h4></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>FindMind Analytics Pvt Ltd, Vellore,TamilNadu</h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="work_details">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="font-size:18px;padding:15px;font-weight:bold;"><h4>Front End Web Developer</h4></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>FindMind Analytics Pvt Ltd, Vellore,TamilNadu</h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="work_details">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="font-size:18px;padding:15px;font-weight:bold;"><h4>Front End Web Developer</h4></div>
+                        <div style="font-size:12px;padding:15px;font-weight:bold;margin-top:-30px;"><h6>FindMind Analytics Pvt Ltd, Vellore,TamilNadu</h6></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-2 col-xs-12"></div>
-        <div class="col-lg-4 col-xs-12">
-            <div class="work_details"></div>
+        <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12">
+            <div class="row">
+                <div class="col-12"><div style="font-size:30px;padding:40px;font-weight:bold;color:#222222;">Tools and Technologies</div></div>
+                <div class="col-12">
+                    <div style="margin-left:20px;margin-top:-20px;">
+                        <div style="width:10px;height:10px;background:#e45447;border-radius: 7px;position:absolute;margin-left:20px;"></div>
+                        <div style="width:100px;height:2px;background:#e45447;position:absolute;margin-left:30px;margin-top:3px;"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+     </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/C++.png" style="width:90px;height:100px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
         </div>
-        <div class="col-lg-4 col-xs-12">
-            <div class="work_details"></div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/C.png" style="width:100px;height:100px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
         </div>
-        <div class="col-lg-2 col-xs-12"></div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/html5.png" style="width:100px;height:100px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/css3.png" style="width:90px;height:100px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/bootstrap.png" style="width:100px;height:110px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/javascript.png" style="width:100px;height:100px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/jquery.png" style="width:100px;height:110px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/SQL.png" style="width:120px;height:100px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/materialize.png" style="width:100px;height:110px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/github.png" style="width:90px;height:90px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/heroku.png" style="width:120px;height:120px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="row">
+                <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/net.png" style="width:90px;height:90px;"></div></div>
+                <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
+            </div>
+        </div>
     </div>
 </div>
-
-    
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12">
+            <div class="row">
+                <div class="col-12"><div style="font-size:30px;padding:40px;font-weight:bold;color:#222222;">Projects</div></div>
+                <div class="col-12">
+                    <div style="margin-left:20px;margin-top:-20px;">
+                        <div style="width:10px;height:10px;background:#e45447;border-radius: 7px;position:absolute;margin-left:20px;"></div>
+                        <div style="width:100px;height:2px;background:#e45447;position:absolute;margin-left:30px;margin-top:3px;"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+     </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4 col-xs-12">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/salonatdoorstep.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/findmind.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/promptinfo.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/foodie.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/videodownloader.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="footer" style="position: absolute;font-style:normal;height:250px;margin-top:100px;">
+    <div class="row">
+        <div class="col-12"><div style="text-align:center;"><img src="img/logo.png"></div></div>
+        <div class="col-12"><div style="color:#777777;text-align:center;font-size:30px;font-weight:bold;margin-top:50px;">Follow Me</div></div>
+        <div class="col-12">
+            <div style="text-align:center;margin-top:40px;">
+                <a class="social_icon" href="https://www.facebook.com/prateek.agarwal.927758" target="_blank"><i class="fab fa-facebook-f icon" style="padding:15px 10px;font-size:30px;"></i></a>
+                <a class="social_icon" href="https://www.instagram.com/prateek_agarwal14/" target="_blank"><i class="fab fa-instagram icon" style="padding:15px 10px;font-size:30px;"></i></a>
+                <a class="social_icon" href="https://www.linkedin.com/in/prateek-agarwal-44975a170/" target="_blank"><i class="fab fa-linkedin-in icon" style="padding:15px 10px;font-size:30px;"></i></a>
+                <a class="social_icon" href="https://twitter.com/Salonnathome?s=08" target="_blank"><i class="fab fa-twitter icon" style="padding:15px 10px;font-size:30px;"></i></a>
+                <a class="social_icon" href="https://github.com/prateek1406" target="_blank"><i class="lni lni-github-original icon" style="padding:15px 10px;font-size:30px;"></i></a>
+                <a class="social_icon" href="https://www.reddit.com/user/lucifer_prateek" target="_blank"><i class="fab fa-reddit icon" style="padding:15px 10px;font-size:30px;"></i></a>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- <script>
+    document.onreadystatechange = function() { 
+        if (document.readyState !== "complete") { 
+            document.querySelector("body").style.visibility = "hidden"; 
+            document.querySelector( "#loader").style.visibility = "visible"; 
+        } 
+        else { 
+            document.querySelector("#loader").style.display = "none"; 
+            document.querySelector("body").style.visibility = "visible"; 
+        } 
+    }; 
+</script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="css/jquery.lineProgressbar.js"></script>   
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
 </body>
 </html>
