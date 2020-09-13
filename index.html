@@ -55,7 +55,7 @@ html {
 {
 
     max-width:550px;
-    height:200px;
+    max-height:300px;
     /* border:2px solid black; */
     background-color: #f9f9ff;
     border-radius:10px;
@@ -115,7 +115,28 @@ html {
      font-weight:bold;
      padding:14px;
 }
+.hire 
+{
+    text-align:left;
+}
 
+@media (max-width: 998.98px) {
+
+   .itsme 
+   {
+        text-align:center;
+   }
+   
+   .hire 
+   {
+       text-align:center;
+   }
+   .photo 
+   {
+       display:none;
+   }
+
+}
 
 </style>
 </head>
@@ -142,7 +163,7 @@ html {
         <div class="col-lg-6 col-xs-12">
             <div class="row">
                 <div class="col-12">
-                    <div style="padding:20px;"><img src="img/itsme.JPG"style="width:150px;height:100px;"></div>
+                    <div class="itsme" style="padding:20px;"><img src="img/itsme.JPG"style="width:150px;height:100px;"></div>
                 </div>
                 <div class="col-12">
                     <div><h1 style="color:black;font-weight:bold;font-size:60px;padding:20px;margin-left:30px;">Prateek Agarwal</h1></div>
@@ -151,11 +172,11 @@ html {
                     <div><div style="color:#777777;font-weight:bold;font-size:30px;padding:20px;margin-left:30px;">Software <span style="font-size:30px;color:#e45447;">Engineer</span> and Web <span style="font-size:30px;color:#90ACD1;">Developer</span></div></div>
                 </div>
                 <div class="col-12">
-                    <div style="text-align:left;padding:40px;"><button class="btn" id="btn"><a href="" style="text-decoration:none;color:white;">Hire Me</a></button></div>
+                    <div class="hire" style="padding:40px;"><button class="btn" id="btn"><a href="" style="text-decoration:none;color:white;">Hire Me</a></button></div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-xs-12" style="background-image:url('img/banner.jpg');height:500px;background-size: cover;background-repeat:no-repeat;background-position:right;"></div>   
+        <div class="col-lg-6 col-xs-12 photo" style="background-image:url('img/banner.jpg');height:500px;background-size: cover;background-repeat:no-repeat;background-position:right;"></div>   
     </div>
 </div>
 <div class="container-fluid" style="margin-top:100px;">
@@ -172,7 +193,7 @@ html {
                     <div style="margin-top:20px;padding:20px;text-align:justify;">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed. inappropriate behavior is often laughed off as “boys will be boys,” women face higher. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</div>
                 </div>
                 <div class="col-12">
-                    <div style="margin-left:18px;"><button class="btn" id="btn1"><a href="/img/creditmind.png" download style="text-decoration:none;color:white;">Resume</a></button></div>
+                    <div class="resume" style="margin-left:18px;"><button class="btn" id="btn1"><a href="/img/creditmind.png" download style="text-decoration:none;color:white;">Resume</a></button></div>
                 </div>
             </div>
         </div>
@@ -196,37 +217,49 @@ html {
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-6 col-xs-12">
-            <div class="education">
+            <div class="education" id="education_details1">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-7 col-md-7 col-xs-12">
                         <div style="font-size:30px;padding:15px;font-weight:bold;"><div>Xth</div></div>
-                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Tiny Tots College , Moradabad</div></div>
+                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Tiny Tots College</div></div>
+                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Moradabad</div></div>
                         <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Science</div></div>
                         <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Percentage - 83%</div></div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-xs-12">
-            <div class="education">
-                <div class="row">
-                    <div class="col-12">
-                        <div style="font-size:30px;padding:15px;font-weight:bold;"><div>XIIth</div></div>
-                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Tiny Tots College , Moradabad</div></div>
-                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Science</div></div>
-                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Percentage - 82%</div></div>
+                    <div class="col-lg-5 col-xs-12">
+                        <div class="duration" id="time3">Apr'13 to Apr'14</div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-6 col-xs-12">
-            <div class="education">
+            <div class="education" id="education_details2">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-7 col-md-7 col-xs-12">
+                        <div style="font-size:30px;padding:15px;font-weight:bold;"><div>XIIth</div></div>
+                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Tiny Tots College</div></div>
+                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Moradabad</div></div>
+                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Science</div></div>
+                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Percentage - 82%</div></div>
+                    </div>
+                    <div class="col-lg-5 col-xs-12">
+                        <div class="duration" id="time4">Apr'15 to Apr'16</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <div class="education" id="education_details3">
+                <div class="row">
+                    <div class="col-lg-7 col-xs-12 col-md-7">
                         <div style="font-size:30px;padding:15px;font-weight:bold;"><div>UnderGrauate</div></div>
-                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Vellore Institute Of Technology,TamilNadu</div></div>
-                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>B.Tech In Information Technology</div></div>
-                        <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>CGPA - 8.80 </div></div>
+                        <div style="font-size:17px;padding:15px;margin-top:-30px;"><div>Vellore Institute Of Technology</div></div>
+                        <div style="font-size:17px;padding:15px;margin-top:-30px;"><div>TamilNadu</div></div>
+                        <div style="font-size:17px;padding:15px;margin-top:-30px;"><div>B.Tech In Information Technology</div></div>
+                        <div style="font-size:17px;padding:15px;margin-top:-30px;"><div>CGPA - 8.80 </div></div>
+                    </div>
+                    <div class="col-lg-5 col-xs-12">
+                        <div class="duration" id="time5">Jul'17 to Jun'21</div>
                     </div>
                 </div>
             </div>
@@ -382,6 +415,70 @@ html {
                 <div class="col-6"><div style="text-align:center;margin-top:20px;"><img src="img/net.png" style="width:90px;height:90px;"></div></div>
                 <div class="col-6"><div style="width:70%;margin:50px auto;"line-progressbar data-percentage="90" data-progress-color="#e45447"></div></div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12">
+            <div class="row">
+                <div class="col-12"><div style="font-size:30px;padding:40px;font-weight:bold;color:#222222;">Certifications</div></div>
+                <div class="col-12">
+                    <div style="margin-left:20px;margin-top:-20px;">
+                        <div style="width:10px;height:10px;background:#e45447;border-radius: 7px;position:absolute;margin-left:20px;"></div>
+                        <div style="width:100px;height:2px;background:#e45447;position:absolute;margin-left:30px;margin-top:3px;"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+     </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4 col-xs-12">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/VIT HACK.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">VITHACK<i class="material-icons right">more_vert</i></span>
+                  <!-- <p><div class="link"><a href="https://www.salonatdoorstep.in/" style="text-align:center;" target="_blank"><i class="fas fa-external-link-alt" style="font-size:20px;color:white;margin:13px 15px;"></i></a></div> -->
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">VITHACK<i class="material-icons right">close</i></span>
+                 <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/devsoc.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">DEVSOC<i class="material-icons right">more_vert</i></span>
+                  <!-- <p><div class="link"><a href="https://findmindwebsite.netlify.app/" style="text-align:center;" target="_blank"><i class="fas fa-external-link-alt" style="font-size:20px;color:white;margin:13px 15px;"></i></a></div> -->
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">DEVSOC<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/codespace.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">CodeSpace<i class="material-icons right">more_vert</i></span>
+                  <!-- <p><div class="link"><a href="http://promptinfo.in/" style="text-align:center;" target="_blank"><i class="fas fa-external-link-alt" style="font-size:20px;color:white;margin:13px 15px;"></i></a></div> -->
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">CodeSpace<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
         </div>
     </div>
 </div>
@@ -563,17 +660,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
      /*---------------------------------------------------------------------------------------*/
 
-     document.getElementById('work3').addEventListener("mouseover",myfunction6);
+     document.getElementById('education_details1').addEventListener("mouseover",myfunction6);
     function myfunction6()
     {
         document.getElementById('time3').style.backgroundColor="white";
         document.getElementById('time3').style.borderColor="white";
     }
-    document.getElementById('work3').addEventListener("mouseout",myfunction7);
+    document.getElementById('education_details1').addEventListener("mouseout",myfunction7);
     function myfunction7()
     {
         document.getElementById('time3').style.backgroundColor="white";
         document.getElementById('time3').style.borderColor="black";
+    }
+
+     /*---------------------------------------------------------------------------------------*/
+
+     document.getElementById('education_details2').addEventListener("mouseover",myfunction8);
+    function myfunction8()
+    {
+        document.getElementById('time4').style.backgroundColor="white";
+        document.getElementById('time4').style.borderColor="white";
+    }
+    document.getElementById('education_details2').addEventListener("mouseout",myfunction9);
+    function myfunction9()
+    {
+        document.getElementById('time4').style.backgroundColor="white";
+        document.getElementById('time4').style.borderColor="black";
+    }
+
+     /*---------------------------------------------------------------------------------------*/
+
+     document.getElementById('education_details3').addEventListener("mouseover",myfunction10);
+    function myfunction10()
+    {
+        document.getElementById('time5').style.backgroundColor="white";
+        document.getElementById('time5').style.borderColor="white";
+    }
+    document.getElementById('education_details3').addEventListener("mouseout",myfunction11);
+    function myfunction11()
+    {
+        document.getElementById('time5').style.backgroundColor="white";
+        document.getElementById('time5').style.borderColor="black";
     }
    
 </script>
