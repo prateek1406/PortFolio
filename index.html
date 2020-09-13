@@ -119,6 +119,18 @@ html {
 {
     text-align:left;
 }
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
 
 @media (max-width: 998.98px) {
 
@@ -135,6 +147,7 @@ html {
    {
        display:none;
    }
+   
 
 }
 
@@ -169,7 +182,7 @@ html {
                     <div><h1 style="color:black;font-weight:bold;font-size:60px;padding:20px;margin-left:30px;">Prateek Agarwal</h1></div>
                 </div>
                 <div class="col-12">
-                    <div><div style="color:#777777;font-weight:bold;font-size:30px;padding:20px;margin-left:30px;">Software <span style="font-size:30px;color:#e45447;">Engineer</span> and Web <span style="font-size:30px;color:#90ACD1;">Developer</span></div></div>
+                    <div><div id="app" style="color:#777777;font-weight:bold;font-size:30px;padding:20px;margin-left:30px;">Software <span style="font-size:30px;color:#e45447;">Engineer</span> and Web <span style="font-size:30px;color:#90ACD1;">Developer</span></div></div>
                 </div>
                 <div class="col-12">
                     <div class="hire" style="padding:40px;"><button class="btn" id="btn"><a href="" style="text-decoration:none;color:white;">Hire Me</a></button></div>
@@ -711,6 +724,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
  <script>
 
 document.getElementById('btn').addEventListener("mouseover",change);
@@ -724,6 +738,17 @@ document.getElementById('btn').addEventListener("mouseover",change);
     {
         document.getElementById('btn1').style.backgroundColor="#e45447";
     }
+
+    var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Software Engineer and Web Developer')
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
  </script>           
 </body>
 </html>
