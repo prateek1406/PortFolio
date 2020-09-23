@@ -10,8 +10,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <style>
 body
 {
@@ -131,6 +133,14 @@ html {
     overflow: hidden;
     transform: translateY(-50%);    
 }
+#app 
+{
+    color:#777777;
+    font-weight:bold;
+    font-size:30px;
+    padding:20px;
+    margin-left:30px;
+}
 
 @media (max-width: 998.98px) {
 
@@ -142,11 +152,29 @@ html {
    .hire 
    {
        text-align:center;
+       margin:auto auto;
    }
    .photo 
    {
        display:none;
    }
+   #app 
+   {
+       color:#777777;
+       font-size:25px;
+       padding:10px;
+
+   }
+   .social_icon
+{
+    width:50px;
+    height:50px;
+    /* margin-left:5px; */
+    display:inline-block;
+    text-align:center;
+    text-decoration:none;
+} 
+   
    
 
 }
@@ -167,7 +195,7 @@ html {
     <li><a href="#projects" style="text-decoration: none;"><i class="material-icons" style="color:#3f51b5;font-size:30px;">web</i>Projects</a></li>
     <li><a href="#!"style="text-decoration: none;"><i class="material-icons" style="color:#e45447;font-size:30px;">grade</i>Certifications</a></li>
     <li><a href="#contact" style="text-decoration: none;"><i class="material-icons" style="color:#795548;font-size:30px;">email</i>Contact</a></li>
-    <li><a href="#!" style="text-decoration: none;"><i class="material-icons" style="font-size:30px;">description</i>Resume</a></li>
+    <li><a href="img/Resume.pdf" download="Resume.pdf" style="text-decoration: none;"><i class="material-icons" style="font-size:30px;">description</i>Resume</a></li>
 </ul>
 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="font-size:30px;padding:20px;color:#e45447">menu</i></a>  
 <!-- <img src="img/logo.svg" id="loader"> -->
@@ -182,14 +210,17 @@ html {
                     <div><h1 style="color:black;font-weight:bold;font-size:60px;padding:20px;margin-left:30px;">Prateek Agarwal</h1></div>
                 </div>
                 <div class="col-12">
-                    <div><div id="app" style="color:#777777;font-weight:bold;font-size:30px;padding:20px;margin-left:30px;">Software <span style="font-size:30px;color:#e45447;">Engineer</span> and Web <span style="font-size:30px;color:#90ACD1;">Developer</span></div></div>
+                    <div><div id="app"></div></div>
+                    <!-- <span style="font-size:30px;color:#e45447;">Engineer</span> and Web <span style="font-size:30px;color:#90ACD1;">Developer</span></div></div>  -->
                 </div>
                 <div class="col-12">
                     <div class="hire" style="padding:40px;"><button class="btn" id="btn"><a href="" style="text-decoration:none;color:white;">Hire Me</a></button></div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-xs-12 photo" style="background-image:url('img/banner.jpg');height:500px;background-size: cover;background-repeat:no-repeat;background-position:right;"></div>   
+        <div class="col-lg-6 col-xs-12 photo" style="background-image:url('img/banner.jpg');height:500px;background-size: cover;background-repeat:no-repeat;background-position:right;">
+            <!-- <div style="text-align:left;"><img src="img/"></div> -->
+        </div>   
     </div>
 </div>
 <div class="container-fluid" style="margin-top:100px;">
@@ -203,10 +234,12 @@ html {
                     <div style="width:100px;height:2px;background:#e45447;position:absolute;margin-left:30px;margin-top:3px;"></div>
                 </div>
                 <div class="col-lg-10 col-xs-12">
-                    <div style="margin-top:20px;padding:20px;text-align:justify;">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed. inappropriate behavior is often laughed off as “boys will be boys,” women face higher. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</div>
+                    <div style="margin-top:20px;padding:20px;text-align:justify;">Hey Everyone, I am Prateek Agarwal, a Final Year student pursuing B.Tech in Information Technology from Vellore Institute of Technology, Vellore. I am an Algorithmic Coder , like to
+                        solve complex problem. My areas of work are in Software Development and Web Development. I worked for some of the start-ups in which I contributed to the implementation of their landing websites.
+                        My short term goal is to grab a good job opportunity in a reputated company. My long term goal is to work in top MNC's with world's most leading developers.</div>
                 </div>
                 <div class="col-12">
-                    <div class="resume" style="margin-left:18px;"><button class="btn" id="btn1"><a href="/img/creditmind.png" download style="text-decoration:none;color:white;">Resume</a></button></div>
+                    <div class="resume" style="margin-left:18px;"><button class="btn" id="btn1"><a href="img/Resume.pdf" download="Resume.pdf" style="text-decoration:none;color:white;">Resume</a></button></div>
                 </div>
             </div>
         </div>
@@ -265,7 +298,7 @@ html {
             <div class="education" id="education_details3">
                 <div class="row">
                     <div class="col-lg-7 col-xs-12 col-md-7">
-                        <div style="font-size:30px;padding:15px;font-weight:bold;"><div>UnderGrauate</div></div>
+                        <div style="font-size:30px;padding:15px;font-weight:bold;"><div>Graduation</div></div>
                         <div style="font-size:17px;padding:15px;margin-top:-30px;"><div>Vellore Institute Of Technology</div></div>
                         <div style="font-size:17px;padding:15px;margin-top:-30px;"><div>TamilNadu</div></div>
                         <div style="font-size:17px;padding:15px;margin-top:-30px;"><div>B.Tech In Information Technology</div></div>
@@ -297,7 +330,7 @@ html {
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-6 col-xs-12">
-            <div class="work_details" id="work">
+            <div class="work_details animate__animated animate__slideInUp" id="work">
                 <div class="row">
                     <div class="col-lg-7 col-md-7 col-xs-12">
                         <div style="font-size:30px;padding:15px;font-weight:bold;"><div>Web Developer</div></div>
@@ -311,9 +344,10 @@ html {
             </div>
         </div>
         <div class="col-lg-6 col-xs-12">
-            <div class="work_details" id="work1">
+            <div class="work_details animate__animated animate__slideInUp" id="work1">
                 <div class="row">
                     <div class="col-lg-7 col-md-7 col-xs-12">
+                        <!-- <h1 class="">An animated element</h1> -->
                         <div style="font-size:30px;padding:15px;font-weight:bold;"><div>Web Developer</div></div>
                         <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>PromptInfo Solutions</div></div>
                         <div style="font-size:18px;padding:15px;margin-top:-30px;"><div>Moradabad, Uttar Pradesh</div></div>
@@ -325,7 +359,7 @@ html {
             </div>
         </div>
         <div class="col-lg-6 col-xs-12">
-            <div class="work_details" id="work2">
+            <div class="work_details animate__animated animate__slideInDown" id="work2">
                 <div class="row">
                     <div class="col-lg-7 col-md-7 col-xs-12">
                         <div style="font-size:30px;padding:15px;font-weight:bold;"><div>Web Developer</div></div>
@@ -435,7 +469,7 @@ html {
     <div class="row">
         <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12">
             <div class="row">
-                <div class="col-12"><div style="font-size:30px;padding:40px;font-weight:bold;color:#222222;">Certifications</div></div>
+                <div class="col-12"><div style="font-size:30px;padding:40px;font-weight:bold;color:#222222;" id="certificates">Certifications</div></div>
                 <div class="col-12">
                     <div style="margin-left:20px;margin-top:-20px;">
                         <div style="width:10px;height:10px;background:#e45447;border-radius: 7px;position:absolute;margin-left:20px;"></div>
